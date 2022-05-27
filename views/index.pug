@@ -1,0 +1,36 @@
+extends layout
+
+block layout-content
+    //-
+        https://www.pixstory.com/story/achilles-heel/33089 
+    .achi-img
+        img(src="/images/achilles.jpeg", alt="Achilles foot from greek mythology", height=450, id="foo")
+    .intro
+        p   Welcome to ACIHEELS, protect your heels in style.      
+        p   
+            | Since 1980,  we have been proud to be your largest local independent custom shoe store.
+            | From lifestyle to formal - shoes and cool sneakers. 
+            | Aciheels has ON's unique selection of custom and designer shoes for men.
+    .timings 
+        #deets
+            h3 STORE TIMINGS
+            p 
+                | Monday - Saturday: 10am to 7pm
+                | Sunday: 12pm - 6pm
+                | Ph: +1 487 234 0007
+        #addy
+            h3 ADDRESS 
+            p 
+                | 301 Collins st, Kensington, 
+                | Toronto , M2E 1P1.
+    h3.choose Pick your option from our collection
+    .selection
+        #SSM
+            img(id="sel1", src="/images/SSM.jpeg", alt="A collection sneaker shoes" height=350, width=500)
+            a(href="/Sneaker") 
+                button(type="button") SNEAKERS
+        #FFM
+            img(id="sel2", src="/images/FF.jpeg", alt="A collection formal shoes" height=350)
+            span 
+                a(href="/Formal") 
+                    button(type="button") FORMALS
