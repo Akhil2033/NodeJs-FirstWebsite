@@ -27,26 +27,23 @@ body {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.4px);
-    -webkit-backdrop-filter: blur(4.4px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.23);
     margin:2em;
-    padding:0em;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width:auto;
-
+   
 }
 
 #site-name {
     font-family: 'morgenlicht', sans-serif;
-    margin-left: 39%;
     font-size: 3em;
     font-weight: 50;
     letter-spacing: 5px;
-    width:fit-content;
+    text-align: center;
                                                 
 }
 
@@ -84,7 +81,6 @@ a:active {
     flex-direction:column;
     list-style-type:none;
     padding: 0em 2em 0em 9em;
-    margin-right: 0em;
     font-size: 1.5em;
     font-weight:500; 
     letter-spacing: 2px;
@@ -121,8 +117,6 @@ a:active {
 .achi-img {
     display:block;
     margin:auto;
-    align-items: center;
-    align-self: center;
     width: fit-content;
     position: relative;
     
@@ -130,7 +124,7 @@ a:active {
 
 .achi-img img {
     border-radius: 5px;
-    filter:drop-shadow(0 0 2rem #804000);
+    filter:drop-shadow(0 1rem 2rem #804000);
 
 } 
 
@@ -150,7 +144,8 @@ a:active {
     height:fit-content;
     justify-content: center;
     font-size: 1.5em;
-    width: fit-content;
+    width: auto;
+    margin: 1em 0em;
     padding:0em 10em; 
 
 }
@@ -161,7 +156,6 @@ a:active {
     flex-direction: row;
     align-self: center;
     text-align: center;
-    margin: 0em;
     justify-content: space-evenly; 
     font-size: 1.5em;
 }
