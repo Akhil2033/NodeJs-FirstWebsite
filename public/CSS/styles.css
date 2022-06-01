@@ -12,7 +12,7 @@ body {
     background: linear-gradient(to bottom, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     font-family: 'Cabinet Grotesk', sans-serif;
     margin:0;
-    padding:0;
+    padding:1em;
     box-sizing: border-box;
 }
 
@@ -88,6 +88,17 @@ a:active {
     letter-spacing: 2px;
 }
 
+#search-svg {
+    position: relative;
+    vertical-align: middle; 
+}
+
+#bag-svg {
+    position: relative;
+    top: 8px;
+          
+}
+
 .site-burg {
     display: flex;
     flex-direction: row;
@@ -138,12 +149,12 @@ a:active {
     width: fit-content;
     position: relative;
     
+    
 }
 
 .achi-img img {
     border-radius: 5px;
     filter:drop-shadow(0 1rem 2rem #804000);
-
 } 
 
 #foot {
@@ -154,7 +165,7 @@ a:active {
 .intro {
     display:flex;
     position: relative;
-    transform: translateY(35%);
+    transform: translateY(15%);
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -266,6 +277,8 @@ a:active {
     display: block;
     margin:auto;
     padding:0em;
+    text-align: center;
+    text-transform: capitalize;
 }
 .featured{
     align-items: center;
@@ -301,6 +314,8 @@ a:active {
     display: block;
     margin:auto;
     padding:0em;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 
@@ -331,8 +346,6 @@ a:active {
 }
 
 @media screen and (max-width:1150px){
-    
-   
 
     .site-burg {
         position: relative;
@@ -340,10 +353,12 @@ a:active {
         background: rgba(255, 255, 255, 0.2);
         border-radius: 20px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         border: 1px solid rgba(255, 255, 255, 0.23);
-        margin: 1em 4em 2em 4em;  
+        margin: 1em 4em 2em 4em; 
+        padding:1em; 
+       
     }
 
     #site-name {
@@ -356,24 +371,30 @@ a:active {
     }
 
     .header-content {
-        display: none;
+        display: flex;
         position: absolute;
         z-index: 1;
-        height: 90vh;
+        height: 60vh;
         width: 50vh;
-        right:0px;
-        top: 28%;
+        right:13px;
+        top: 27%;
+        transform: scale(0);
+        transform-origin: top right;
+        transition: transform 0.5s ease-in;
     }
 
-    
+    .burger-active {
+        transform: scale(1);
+    }
+
     #main-navigation li {
         display:flex;
         flex-direction:row;
         justify-content: center;
         list-style-type:none;
-        padding: 2em 3em 0em 2em;
-        font-size: 1.5em;
-        font-weight:500; 
+        padding: 0em 3em 2em 2em;
+        font-size: 2em;
+        font-weight:800; 
         letter-spacing: 2px;
     }
 
@@ -394,6 +415,46 @@ a:active {
         justify-content: space-evenly;  
     }
 
+    .timings {
+        display: flex;
+        position: relative;
+        transform: translateY(20%);
+        flex-direction: column;
+        margin: 1em;
+        padding: 0em 0em 2em 0em;
+    }
 
-    
+
 }
+
+@media screen and (max-width:720px) {
+  
+    .site-burg {
+        align-self: center;
+        margin: 1em 4em 2em 4em; 
+        padding:1em; 
+    }
+
+    #site-name {
+        position: relative;
+        right: 20%;
+        font-size: 2.5em;
+    }
+
+    .burger{
+        display: block;
+        left: 15%;
+        top: 2.75em;
+    }
+
+    .header-content {
+        justify-content: center;
+        height: 60vh;
+        width: 30vh;
+        right:13px;
+        top: 23%;
+
+    }
+
+} 
+

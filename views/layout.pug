@@ -1,47 +1,46 @@
 block variables 
 doctype html 
 html 
-    head 
-        meta(charset="utf-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title #{title} | ACIHEELS
-        link(rel="stylesheet", href="/CSS/styles.css")
-        link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0")
-    body 
-        header#header
-            .site-burg
-              h2#site-name 
-                a(href="/") ACIHEELS
-              .burger
-                .line-1 
-                .line-2 
-                .line-3 
-            .header-content 
-                nav(id="main-navigation", aria-label="Main navigation")
-                  ul
-                    li 
-                      img(id="bag-svg", src="/images/bag.png", alt="bag icon", height=40)
-                    li 
-                      a(href="/") Home
-                    li
-                      a(href="/Sneaker") Sneakers
-                    li 
-                      a(href="/Formal") Formals
-                    li 
-                      img(id="search-svg", src="/images/search.png", alt="search icon", height=40)
-                //- //input(id="search", type="search", placeholder="Search..")
-        main#main 
-            block layout-content 
+  head 
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{title} | ACIHEELS
+    link(rel="stylesheet", href="/CSS/styles.css")
+script(src="/js/hello.js")
+  body 
+    header#header
+      .site-burg
+        h2#site-name 
+          a(href="/") ACIHEELS
+        .burger
+          .line-1 
+          .line-2 
+          .line-3 
+      .header-content 
+          nav(id="main-navigation", aria-label="Main navigation")
+            ul
+              li 
+                img(id="bag-svg", src="/images/bag.png", alt="bag icon", height=40)
+              li 
+                a(href="/") Home
+              li
+                a(href="/Sneaker") Sneakers
+              li 
+                a(href="/Formal") Formals
+              li 
+                img(id="search-svg", src="/images/search.png", alt="search icon", height=40)
+          //- //input(id="search", type="search", placeholder="Search..")
+    main#main 
+      block layout-content 
     footer#footer
-        nav(id="footer-navigation", aria-label="Footer navigation")
-                    ul 
-                        li 
-                          a(href="/") home
-                        li
-                          a(href="/about") about us
-                        li 
-                          a(href="/contact") contact us
-                        li 
-                          a(href="/careers") careers 
-        p &copy; Copyright ACIHEELS, 2022.
-
+      nav(id="footer-navigation", aria-label="Footer navigation")
+        ul 
+            li 
+              a(href="/") home
+            li
+              a(href="/about") about us
+            li 
+              a(href="/contact") contact us
+            li 
+              a(href="/careers") careers 
+      p &copy; Copyright ACIHEELS, 2022
