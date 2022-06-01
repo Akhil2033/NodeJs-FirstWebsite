@@ -1,11 +1,6 @@
 @import url('https://api.fontshare.com/css?f[]=cabinet-grotesk@400,500,700&display=swap" rel="stylesheet');
 @import url('http://fonts.cdnfonts.com/css/morgenlicht');
 
-/* 
-font-family: 'DM Sans', sans-serif;
-font-family: 'Raleway', sans-serif;
-font-family: 'Rozha One', serif; */
-
 body {
     background: #649173;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
@@ -344,6 +339,7 @@ a:active {
     text-transform: uppercase;
   
 }
+/*media queries*/
 
 @media screen and (max-width:1150px){
 
