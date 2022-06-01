@@ -20,7 +20,6 @@ body {
 #header {
     /* background:linear-gradient(rgb(240,234,240,0.4) ,rgba(255,255,255,0.2)); */
     margin:0 2em;
-
     
 }
 .header-content {
@@ -30,12 +29,7 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.23);
-    margin:2em;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   
+    margin: 0em 6em 2em 6em;
 }
 
 #site-name {
@@ -76,24 +70,48 @@ a:active {
     color: black;
 }
 
+#main-navigation {
+    display:block;
+    margin:auto;
+    width: fit-content;
+    position: relative;
+    
+}
+
 #main-navigation li {
     display:inline-block;
     flex-direction:column;
     list-style-type:none;
-    padding: 0em 2em 0em 9em;
+    padding: 0em 2em 0em 2em;
     font-size: 1.5em;
     font-weight:500; 
     letter-spacing: 2px;
 }
 
-#search-svg {
-    position: relative;
-    right: 85%;    
+.site-burg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#bag-svg {
+.burger {
+    display: none;
+    width: fit-content;
+    height: fit-content;
+    position: relative;   
+    left: 30%;
+    top: 3.75em;
+}
+
+.burger div{
+    
+    width: 30px;
+    height: 3.5px;
+    border-radius: 4px;
+    background-color: black;
+    margin: 4px;
     position: relative;
-    left: -4%;
+     
 }
 
 /*main*/
@@ -213,7 +231,7 @@ a:active {
 }
 
 #SSM button, #FFM button{
-    margin-top: 1em;
+    margin: 2em 0;
     border-radius: 10px;
     width: 8em;
     height: 3em;
@@ -310,4 +328,72 @@ a:active {
     font-weight: bold;
     text-transform: uppercase;
   
+}
+
+@media screen and (max-width:1150px){
+    
+   
+
+    .site-burg {
+        position: relative;
+        align-self: center;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.23);
+        margin: 1em 4em 2em 4em;  
+    }
+
+    #site-name {
+        position: relative;
+        right: 30%;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .header-content {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        height: 90vh;
+        width: 50vh;
+        right:0px;
+        top: 28%;
+    }
+
+    
+    #main-navigation li {
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        list-style-type:none;
+        padding: 2em 3em 0em 2em;
+        font-size: 1.5em;
+        font-weight:500; 
+        letter-spacing: 2px;
+    }
+
+    #search-svg {
+        position: relative;
+        vertical-align: middle;    
+    }
+    
+    #bag-svg {
+        position: relative;
+        vertical-align: middle;
+              
+    }
+
+    .selection {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;  
+    }
+
+
+    
 }
